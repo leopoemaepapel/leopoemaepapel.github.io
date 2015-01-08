@@ -5,6 +5,7 @@ locale: en_US
 description: Versos vestidos de alma.
 logo: site-logo.png
 search: true
+comments: true
 url:
 
 
@@ -35,7 +36,7 @@ owner:
   name: Leo Nunes
   avatar: bio-photo.jpg
   email: leo.vivre@gmail.com
-  disqus-shortname:
+  disqus-shortname: 'leopoemaepapel'
   twitter: #username
   facebook: #username
   github: #username

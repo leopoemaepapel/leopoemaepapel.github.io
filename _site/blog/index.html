@@ -140,8 +140,16 @@
       </header>
       <div class="entry-content">
         <ul class="post-list">
- 
-  <li><article><a href="/blog/hello-world/">Hello World <span class="entry-date"><time datetime="2014-08-08T16:39:55-03:00">August 08, 2014</time></span></a></article></li>
+
+    <li>
+        <article>
+            <a href="/blog/hello-world/">Hello World
+                <span class="entry-date">
+                    <time datetime="2014-08-08T16:39:55-03:00"> 08,August, 2014</time>
+                </span>
+            </a>
+        </article>
+    </li>
 
 </ul>
 
@@ -182,19 +190,19 @@
           searchResults: '.search-results',
           template: '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
           fuzzy: true,
-          noResults: '<p>Nothing found.</p>'
+          noResults: '<p>Nada encontrado.</p>'
         });
   });
 
   (function( $, window, undefined ) {
-    
+
      var bs = {
           close: $(".close-btn"),
           searchform: $(".search-form"),
           canvas: $(".js-menu-screen"),
           dothis: $('.dosearch')
       };
-    
+
     bs.dothis.on('click', function() {
       $('.search-wrapper').css({ display: "block" });
       $('body').toggleClass('no-scroll');
@@ -202,7 +210,7 @@
       bs.searchform.find('input').focus();
       bs.canvas.toggleClass('is-visible');
     });
-    
+
       bs.close.on('click', function() {
         $('.search-wrapper').removeAttr( 'style' );
         $('body').toggleClass('no-scroll');
